@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7E5C6221CA9026E000F9D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E5C6211CA9026E000F9D9E /* AppDelegate.swift */; };
+		D7E5C6241CA9026E000F9D9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E5C6231CA9026E000F9D9E /* ViewController.swift */; };
+		D7E5C6271CA9026E000F9D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E5C6251CA9026E000F9D9E /* Main.storyboard */; };
+		D7E5C6291CA9026E000F9D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E5C6281CA9026E000F9D9E /* Assets.xcassets */; };
+		D7E5C62C1CA9026E000F9D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E5C62A1CA9026E000F9D9E /* LaunchScreen.storyboard */; };
+		D7E5C6311CA9026E000F9D9E /* ForceWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D7E5C6301CA9026E000F9D9E /* ForceWatch WatchKit App.app */; };
+		D7E5C6371CA9026E000F9D9E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E5C6351CA9026E000F9D9E /* Interface.storyboard */; };
+		D7E5C6391CA9026E000F9D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E5C6381CA9026E000F9D9E /* Assets.xcassets */; };
+		D7E5C6401CA9026E000F9D9E /* ForceWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7E5C63F1CA9026E000F9D9E /* ForceWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D7E5C6471CA9026E000F9D9E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E5C6461CA9026E000F9D9E /* InterfaceController.swift */; };
+		D7E5C6491CA9026E000F9D9E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E5C6481CA9026E000F9D9E /* ExtensionDelegate.swift */; };
+		D7E5C64B1CA9026E000F9D9E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E5C64A1CA9026E000F9D9E /* NotificationController.swift */; };
+		D7E5C64D1CA9026E000F9D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E5C64C1CA9026E000F9D9E /* Assets.xcassets */; };
+		D7E5C65D1CA9284D000F9D9E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E5C65C1CA9284D000F9D9E /* CoreBluetooth.framework */; };
+		D7E5C65F1CA92920000F9D9E /* ForcePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E5C65E1CA92920000F9D9E /* ForcePeripheral.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7E5C6321CA9026E000F9D9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7E5C6161CA9026D000F9D9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E5C62F1CA9026E000F9D9E;
+			remoteInfo = "ForceWatch WatchKit App";
+		};
+		D7E5C6411CA9026E000F9D9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7E5C6161CA9026D000F9D9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E5C63E1CA9026E000F9D9E;
+			remoteInfo = "ForceWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7E5C6541CA9026E000F9D9E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D7E5C6401CA9026E000F9D9E /* ForceWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E5C6581CA9026E000F9D9E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D7E5C6311CA9026E000F9D9E /* ForceWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D7E5C61E1CA9026D000F9D9E /* ForceWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForceWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E5C6211CA9026E000F9D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7E5C6231CA9026E000F9D9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7E5C6261CA9026E000F9D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7E5C6281CA9026E000F9D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E5C62B1CA9026E000F9D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7E5C62D1CA9026E000F9D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E5C6301CA9026E000F9D9E /* ForceWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ForceWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E5C6361CA9026E000F9D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D7E5C6381CA9026E000F9D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E5C63A1CA9026E000F9D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E5C63F1CA9026E000F9D9E /* ForceWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ForceWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E5C6451CA9026E000F9D9E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D7E5C6461CA9026E000F9D9E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D7E5C6481CA9026E000F9D9E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D7E5C64A1CA9026E000F9D9E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D7E5C64C1CA9026E000F9D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E5C64E1CA9026E000F9D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E5C65C1CA9284D000F9D9E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D7E5C65E1CA92920000F9D9E /* ForcePeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForcePeripheral.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7E5C61B1CA9026D000F9D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E5C65D1CA9284D000F9D9E /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E5C63C1CA9026E000F9D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7E5C6151CA9026D000F9D9E = {
+			isa = PBXGroup;
+			children = (
+				D7E5C65C1CA9284D000F9D9E /* CoreBluetooth.framework */,
+				D7E5C6201CA9026E000F9D9E /* ForceWatch */,
+				D7E5C6341CA9026E000F9D9E /* ForceWatch WatchKit App */,
+				D7E5C6431CA9026E000F9D9E /* ForceWatch WatchKit Extension */,
+				D7E5C61F1CA9026D000F9D9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7E5C61F1CA9026D000F9D9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7E5C61E1CA9026D000F9D9E /* ForceWatch.app */,
+				D7E5C6301CA9026E000F9D9E /* ForceWatch WatchKit App.app */,
+				D7E5C63F1CA9026E000F9D9E /* ForceWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7E5C6201CA9026E000F9D9E /* ForceWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D7E5C6211CA9026E000F9D9E /* AppDelegate.swift */,
+				D7E5C6231CA9026E000F9D9E /* ViewController.swift */,
+				D7E5C65E1CA92920000F9D9E /* ForcePeripheral.swift */,
+				D7E5C6251CA9026E000F9D9E /* Main.storyboard */,
+				D7E5C6281CA9026E000F9D9E /* Assets.xcassets */,
+				D7E5C62A1CA9026E000F9D9E /* LaunchScreen.storyboard */,
+				D7E5C62D1CA9026E000F9D9E /* Info.plist */,
+			);
+			path = ForceWatch;
+			sourceTree = "<group>";
+		};
+		D7E5C6341CA9026E000F9D9E /* ForceWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D7E5C6351CA9026E000F9D9E /* Interface.storyboard */,
+				D7E5C6381CA9026E000F9D9E /* Assets.xcassets */,
+				D7E5C63A1CA9026E000F9D9E /* Info.plist */,
+			);
+			path = "ForceWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		D7E5C6431CA9026E000F9D9E /* ForceWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D7E5C6461CA9026E000F9D9E /* InterfaceController.swift */,
+				D7E5C6481CA9026E000F9D9E /* ExtensionDelegate.swift */,
+				D7E5C64A1CA9026E000F9D9E /* NotificationController.swift */,
+				D7E5C64C1CA9026E000F9D9E /* Assets.xcassets */,
+				D7E5C64E1CA9026E000F9D9E /* Info.plist */,
+				D7E5C6441CA9026E000F9D9E /* Supporting Files */,
+			);
+			path = "ForceWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D7E5C6441CA9026E000F9D9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7E5C6451CA9026E000F9D9E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7E5C61D1CA9026D000F9D9E /* ForceWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E5C6591CA9026E000F9D9E /* Build configuration list for PBXNativeTarget "ForceWatch" */;
+			buildPhases = (
+				D7E5C61A1CA9026D000F9D9E /* Sources */,
+				D7E5C61B1CA9026D000F9D9E /* Frameworks */,
+				D7E5C61C1CA9026D000F9D9E /* Resources */,
+				D7E5C6581CA9026E000F9D9E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7E5C6331CA9026E000F9D9E /* PBXTargetDependency */,
+			);
+			name = ForceWatch;
+			productName = ForceWatch;
+			productReference = D7E5C61E1CA9026D000F9D9E /* ForceWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7E5C62F1CA9026E000F9D9E /* ForceWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E5C6551CA9026E000F9D9E /* Build configuration list for PBXNativeTarget "ForceWatch WatchKit App" */;
+			buildPhases = (
+				D7E5C62E1CA9026E000F9D9E /* Resources */,
+				D7E5C6541CA9026E000F9D9E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7E5C6421CA9026E000F9D9E /* PBXTargetDependency */,
+			);
+			name = "ForceWatch WatchKit App";
+			productName = "ForceWatch WatchKit App";
+			productReference = D7E5C6301CA9026E000F9D9E /* ForceWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D7E5C63E1CA9026E000F9D9E /* ForceWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E5C6511CA9026E000F9D9E /* Build configuration list for PBXNativeTarget "ForceWatch WatchKit Extension" */;
+			buildPhases = (
+				D7E5C63B1CA9026E000F9D9E /* Sources */,
+				D7E5C63C1CA9026E000F9D9E /* Frameworks */,
+				D7E5C63D1CA9026E000F9D9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ForceWatch WatchKit Extension";
+			productName = "ForceWatch WatchKit Extension";
+			productReference = D7E5C63F1CA9026E000F9D9E /* ForceWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7E5C6161CA9026D000F9D9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "David Liu";
+				TargetAttributes = {
+					D7E5C61D1CA9026D000F9D9E = {
+						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					D7E5C62F1CA9026E000F9D9E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D7E5C63E1CA9026E000F9D9E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = D7E5C6191CA9026D000F9D9E /* Build configuration list for PBXProject "ForceWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7E5C6151CA9026D000F9D9E;
+			productRefGroup = D7E5C61F1CA9026D000F9D9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7E5C61D1CA9026D000F9D9E /* ForceWatch */,
+				D7E5C62F1CA9026E000F9D9E /* ForceWatch WatchKit App */,
+				D7E5C63E1CA9026E000F9D9E /* ForceWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7E5C61C1CA9026D000F9D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E5C62C1CA9026E000F9D9E /* LaunchScreen.storyboard in Resources */,
+				D7E5C6291CA9026E000F9D9E /* Assets.xcassets in Resources */,
+				D7E5C6271CA9026E000F9D9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E5C62E1CA9026E000F9D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E5C6391CA9026E000F9D9E /* Assets.xcassets in Resources */,
+				D7E5C6371CA9026E000F9D9E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E5C63D1CA9026E000F9D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E5C64D1CA9026E000F9D9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7E5C61A1CA9026D000F9D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E5C6241CA9026E000F9D9E /* ViewController.swift in Sources */,
+				D7E5C65F1CA92920000F9D9E /* ForcePeripheral.swift in Sources */,
+				D7E5C6221CA9026E000F9D9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E5C63B1CA9026E000F9D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E5C64B1CA9026E000F9D9E /* NotificationController.swift in Sources */,
+				D7E5C6491CA9026E000F9D9E /* ExtensionDelegate.swift in Sources */,
+				D7E5C6471CA9026E000F9D9E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7E5C6331CA9026E000F9D9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E5C62F1CA9026E000F9D9E /* ForceWatch WatchKit App */;
+			targetProxy = D7E5C6321CA9026E000F9D9E /* PBXContainerItemProxy */;
+		};
+		D7E5C6421CA9026E000F9D9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E5C63E1CA9026E000F9D9E /* ForceWatch WatchKit Extension */;
+			targetProxy = D7E5C6411CA9026E000F9D9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7E5C6251CA9026E000F9D9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E5C6261CA9026E000F9D9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7E5C62A1CA9026E000F9D9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E5C62B1CA9026E000F9D9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D7E5C6351CA9026E000F9D9E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E5C6361CA9026E000F9D9E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7E5C64F1CA9026E000F9D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7E5C6501CA9026E000F9D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7E5C6521CA9026E000F9D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ForceWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abcolor.ForceWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D7E5C6531CA9026E000F9D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ForceWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abcolor.ForceWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		D7E5C6561CA9026E000F9D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ForceWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "ForceWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = abcolor.ForceWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D7E5C6571CA9026E000F9D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ForceWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "ForceWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = abcolor.ForceWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		D7E5C65A1CA9026E000F9D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ForceWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abcolor.ForceWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7E5C65B1CA9026E000F9D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ForceWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abcolor.ForceWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7E5C6191CA9026D000F9D9E /* Build configuration list for PBXProject "ForceWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E5C64F1CA9026E000F9D9E /* Debug */,
+				D7E5C6501CA9026E000F9D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E5C6511CA9026E000F9D9E /* Build configuration list for PBXNativeTarget "ForceWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E5C6521CA9026E000F9D9E /* Debug */,
+				D7E5C6531CA9026E000F9D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7E5C6551CA9026E000F9D9E /* Build configuration list for PBXNativeTarget "ForceWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E5C6561CA9026E000F9D9E /* Debug */,
+				D7E5C6571CA9026E000F9D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7E5C6591CA9026E000F9D9E /* Build configuration list for PBXNativeTarget "ForceWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E5C65A1CA9026E000F9D9E /* Debug */,
+				D7E5C65B1CA9026E000F9D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7E5C6161CA9026D000F9D9E /* Project object */;
+}
